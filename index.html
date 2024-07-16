@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="FR-fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exo_01</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./main.js" defer></script>
+</head>
+<body>
+    <h1> Chifoumi </h1>
+    <div id="contenair-jeu" class="zone-jeu">
+        <div>
+            <h2>VOUS</h2>
+            <img src=".\img\pierre.png" width="100px" alt="pierre">
+            <img src=".\img\feuille.png" width="100px" alt="feuille">
+            <img src=".\img\Ciseau.png" width="100px" alt="ciseau">
+            <p id="votre-score" class="change">0</p>
+        </div>
+        <div>
+            <p id="message">Cliquez sur une image pour jouer</p>
+        </div>
+        <div>
+            <h2>ORDINATEUR</h2>
+            <img src="./img/question.png" width="100px"  alt="question">
+            <p id="ordinateur-score" class="change">0</p>
+        </div>
+    </div>
+
+    <div id="contenair-score" class="zone-score">
+        <div>
+            <h3>Statistique :</h3><br>
+            <p>Votre score <span id="votre-manche-win">0</span></p>
+            <p>Ordinateur score <span id="ordi-manche-win">0</span></p>
+        </div>
+        <div>
+            <img src="./img/recharger.png" width="60px" alt="recharger">
+            <h3>Rejouer</h3>
+        </div>
+        <div>
+            <img src="./img/la-gomme.png" width="60px" alt="gomme">
+            <h3>Effacer</h3>
+        </div>
+    </div>
+</body>
+</html>

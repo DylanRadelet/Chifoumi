@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 100vw;
+    height: 100vh;
+}
+
+:root{
+    --padding-width: 20px;
+    --widht-divchild: 30%;
+    --widht-divbig: 35%;
+}
+
+@keyframes scale-animation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.zone-jeu{
+    display: flex;
+    justify-content: space-around;
+    background-color: #EEEDEF;
+    border-radius: 25px;
+    padding: var(--padding-width);
+    width: 70%;
+    height: 50%;
+
+    div:nth-child(1){
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: var(--widht-divchild);
+    }
+    div:nth-child(1)>img:hover{
+        cursor: pointer;
+        filter: drop-shadow(0px 5px 4px #000000);
+        animation: scale-animation 2s infinite;
+    }
+
+    div:nth-child(2){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: var(--widht-divbig);
+    }
+    div:nth-child(3){
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: var(--widht-divchild);
+    }
+}
+
+.zone-score{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #41494A;
+    border-radius: 25px;
+    padding: var(--padding-width);
+    width: 70%;
+    height: 10%; 
+    color: #EEEDEF;
+
+    div:nth-child(1){
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        width: var(--widht-divchild);
+    }
+    div:nth-child(2){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        width: var(--widht-divbig);
+    }
+    div:nth-child(2):hover{
+        cursor: pointer;
+        filter: drop-shadow(0px 5px 4px #000000);
+        animation: scale-animation 2s infinite;
+    }
+    div:nth-child(3){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        width: var(--widht-divchild);
+    }
+    div:nth-child(3):hover{
+        cursor: pointer;
+        filter: drop-shadow(0px 5px 4px #000000);
+        animation: scale-animation 2s infinite;
+    }
+}
+
+.change{
+    font-size: 20px;
+}
